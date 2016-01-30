@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: 67bc98d01cf55b541bba4434e00e7578
+timeCreated: 1454139607
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sprite_Player_Jump_0
+    21300002: Sprite_Player_Jump_1
+    21300004: Sprite_Player_Jump_2
+    21300006: Sprite_Player_Jump_3
+    21300008: Sprite_Player_Jump_4
+    21300010: Sprite_Player_Jump_5
+    21300012: Sprite_Player_Jump_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sprite_Player_Jump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 196
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 78, y: 149}
+        - {x: 79, y: 184}
+        - {x: 80, y: 203}
+        - {x: 80, y: 267}
+        - {x: 48, y: 293}
+        - {x: -68, y: 293}
+        - {x: -93, y: 268}
+        - {x: -93, y: 205}
+        - {x: -92, y: 200}
+        - {x: -76, y: 190}
+        - {x: -72, y: 25}
+        - {x: -71, y: 9}
+        - {x: -52, y: 2}
+        - {x: 42, y: 2}
+        - {x: 55, y: 3}
+        - {x: 75, y: 22}
+        - {x: 80, y: 80}
+        - {x: 80, y: 140}
+    - name: Sprite_Player_Jump_1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 196
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86, y: 282}
+        - {x: 81, y: 313}
+        - {x: 55, y: 327}
+        - {x: -7, y: 327}
+        - {x: -37, y: 314}
+        - {x: -74, y: 233}
+        - {x: -74, y: 169}
+        - {x: -71, y: 146}
+        - {x: -70, y: 73}
+        - {x: -65, y: 12}
+        - {x: -55, y: 3}
+        - {x: 22, y: 3}
+        - {x: 33, y: 18}
+        - {x: 72, y: 134}
+        - {x: 86, y: 222}
+    - name: Sprite_Player_Jump_2
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 196
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86, y: 288}
+        - {x: 85, y: 293}
+        - {x: 83, y: 310}
+        - {x: 61, y: 328}
+        - {x: -8, y: 328}
+        - {x: -83, y: 311}
+        - {x: -97, y: 279}
+        - {x: -97, y: 213}
+        - {x: -87, y: 197}
+        - {x: -68, y: 159}
+        - {x: -62, y: 46}
+        - {x: -57, y: 34}
+        - {x: -39, y: 24}
+        - {x: 23, y: 24}
+        - {x: 66, y: 104}
+        - {x: 83, y: 148}
+        - {x: 86, y: 192}
+    - name: Sprite_Player_Jump_3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 196
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 91, y: 294}
+        - {x: 66, y: 329}
+        - {x: -70, y: 329}
+        - {x: -98, y: 311}
+        - {x: -98, y: 246}
+        - {x: -91, y: 230}
+        - {x: -70, y: 229}
+        - {x: -71, y: 168}
+        - {x: -64, y: 150}
+        - {x: -44, y: 52}
+        - {x: -28, y: 41}
+        - {x: 43, y: 41}
+        - {x: 79, y: 92}
+        - {x: 89, y: 131}
+        - {x: 91, y: 149}
+    - name: Sprite_Player_Jump_4
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 196
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 98, y: 211}
+        - {x: 88, y: 276}
+        - {x: 79, y: 304}
+        - {x: 62, y: 316}
+        - {x: 33, y: 335}
+        - {x: -73, y: 335}
+        - {x: -73, y: 250}
+        - {x: -67, y: 210}
+        - {x: -25, y: 58}
+        - {x: -19, y: 44}
+        - {x: -4, y: 42}
+        - {x: 50, y: 42}
+        - {x: 53, y: 43}
+        - {x: 70, y: 56}
+        - {x: 98, y: 90}
+    - name: Sprite_Player_Jump_5
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 196
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 83}
+        - {x: 86, y: 206}
+        - {x: 84, y: 216}
+        - {x: 62, y: 272}
+        - {x: 28, y: 286}
+        - {x: -40, y: 286}
+        - {x: -50, y: 277}
+        - {x: -59, y: 250}
+        - {x: -62, y: 129}
+        - {x: -62, y: 25}
+        - {x: -53, y: 2}
+        - {x: -37, y: 0}
+        - {x: 27, y: 0}
+        - {x: 80, y: 7}
+        - {x: 90, y: 17}
+        - {x: 95, y: 30}
+    - name: Sprite_Player_Jump_6
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 0
+        width: 196
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88, y: 238}
+        - {x: 83, y: 261}
+        - {x: 53, y: 273}
+        - {x: -6, y: 273}
+        - {x: -12, y: 272}
+        - {x: -25, y: 267}
+        - {x: -63, y: 251}
+        - {x: -85, y: 238}
+        - {x: -85, y: 170}
+        - {x: -70, y: 137}
+        - {x: -55, y: 13}
+        - {x: -40, y: 0}
+        - {x: 61, y: 0}
+        - {x: 79, y: 28}
+        - {x: 78, y: 111}
+        - {x: 88, y: 178}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

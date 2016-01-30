@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: f90f152e21c709849bec431d4a35648d
+timeCreated: 1454144281
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sprite_Player_Atk(1)_0
+    21300002: Sprite_Player_Atk(1)_1
+    21300004: Sprite_Player_Atk(1)_2
+    21300006: Sprite_Player_Atk(1)_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sprite_Player_Atk(1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 274
+        height: 355
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: 283}
+        - {x: 33, y: 306}
+        - {x: -28, y: 306}
+        - {x: -38, y: 305}
+        - {x: -47, y: 291}
+        - {x: -50, y: 272}
+        - {x: -50, y: 228}
+        - {x: -43, y: 194}
+        - {x: -50, y: 122}
+        - {x: -50, y: 107}
+        - {x: -47, y: 64}
+        - {x: -18, y: 25}
+        - {x: 6, y: 4}
+        - {x: 86, y: 4}
+        - {x: 107, y: 59}
+        - {x: 107, y: 250}
+        - {x: 100, y: 267}
+    - name: Sprite_Player_Atk(1)_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 0
+        width: 274
+        height: 355
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113, y: 82}
+        - {x: 114, y: 93}
+        - {x: 118, y: 132}
+        - {x: 129, y: 154}
+        - {x: 137, y: 173}
+        - {x: 137, y: 275}
+        - {x: 126, y: 292}
+        - {x: 88, y: 307}
+        - {x: 69, y: 311}
+        - {x: 39, y: 340}
+        - {x: 25, y: 345}
+        - {x: -34, y: 345}
+        - {x: -59, y: 320}
+        - {x: -90, y: 281}
+        - {x: -101, y: 262}
+        - {x: -105, y: 225}
+        - {x: -107, y: 175}
+        - {x: -107, y: 115}
+        - {x: -106, y: 98}
+        - {x: -62, y: 10}
+        - {x: -28, y: 0}
+        - {x: 60, y: 0}
+        - {x: 82, y: 3}
+        - {x: 92, y: 15}
+        - {x: 100, y: 63}
+    - name: Sprite_Player_Atk(1)_2
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 0
+        width: 274
+        height: 355
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 123, y: 180}
+        - {x: 137, y: 197}
+        - {x: 137, y: 272}
+        - {x: 124, y: 296}
+        - {x: 70, y: 309}
+        - {x: 17, y: 311}
+        - {x: 2, y: 345}
+        - {x: -5, y: 347}
+        - {x: -73, y: 347}
+        - {x: -87, y: 336}
+        - {x: -98, y: 291}
+        - {x: -93, y: 235}
+        - {x: -104, y: 198}
+        - {x: -122, y: 168}
+        - {x: -122, y: 96}
+        - {x: -98, y: 52}
+        - {x: -79, y: 23}
+        - {x: -32, y: 0}
+        - {x: 76, y: 0}
+        - {x: 92, y: 16}
+        - {x: 110, y: 102}
+        - {x: 110, y: 160}
+      - - {x: 129, y: 169}
+        - {x: 129, y: 122}
+        - {x: 134, y: 112}
+        - {x: 137, y: 112}
+        - {x: 137, y: 201}
+        - {x: 134, y: 200}
+      - - {x: -137, y: 271}
+        - {x: -137, y: 178}
+        - {x: -134, y: 179}
+        - {x: -127, y: 196}
+        - {x: -127, y: 252}
+        - {x: -134, y: 271}
+    - name: Sprite_Player_Atk(1)_3
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 0
+        width: 274
+        height: 355
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102, y: 176}
+        - {x: 102, y: 268}
+        - {x: 96, y: 291}
+        - {x: 67, y: 307}
+        - {x: 14, y: 306}
+        - {x: -13, y: 318}
+        - {x: -30, y: 347}
+        - {x: -102, y: 347}
+        - {x: -126, y: 327}
+        - {x: -119, y: 270}
+        - {x: -127, y: 227}
+        - {x: -137, y: 215}
+        - {x: -137, y: 106}
+        - {x: -121, y: 73}
+        - {x: -93, y: 36}
+        - {x: -51, y: 35}
+        - {x: -43, y: 12}
+        - {x: -36, y: 6}
+        - {x: -31, y: 4}
+        - {x: -24, y: 2}
+        - {x: -22, y: 1}
+        - {x: 54, y: 1}
+        - {x: 78, y: 5}
+        - {x: 90, y: 26}
+        - {x: 100, y: 80}
+      - - {x: 132, y: 321}
+        - {x: 132, y: 286}
+        - {x: 133, y: 273}
+        - {x: 136, y: 272}
+        - {x: 137, y: 272}
+        - {x: 137, y: 329}
+        - {x: 134, y: 328}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
