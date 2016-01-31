@@ -9,13 +9,20 @@ public class BulletScript : MonoBehaviour {
     float timeCount;
     [SerializeField] bool isBlack;
     bool hit;
+    
 
 	void Start () {
         timeCount = 0;
         lifeTime = 1.0f;
         hit = false;
 	}
-	
+
+    public void SetIsBlack(bool Black)
+    {
+        Debug.Log("qaq" + Black);
+        this.isBlack = Black;
+    }
+
 	// Update is called once per frame
 	void Update () {
         timeCount += Time.deltaTime;
@@ -45,7 +52,10 @@ public class BulletScript : MonoBehaviour {
 
         if (otherOBJ.tag == "Monster")
         {
-            otherOBJ.GetComponent<health>().Damage();
+            if (isBlack)
+                BlackAttack(otherOBJ);
+            else if (!isBlack)
+                WhiteAttack(otherOBJ);
         }
 
         // ADD SPECIAL EFFECT
@@ -56,13 +66,32 @@ public class BulletScript : MonoBehaviour {
             
     }
 
-    void BlackAttack()
+    void BlackAttack(GameObject monster)
     {
+        if (monster.GetComponent<Identity>().IsBlack())
+        {
+            monster.GetComponent<health>().hp += 1; ;
+            Debug.Log(" ++ B ");
+        }
+        else
+        {
+            monster.GetComponent<health>().hp -= 1;
+            Debug.Log(" -- B");
+        }
 
     }
 
-    void WhiteAttack()
+    void WhiteAttack(GameObject monster)
     {
-
+        if (!monster.GetComponent<Identity>().IsBlack())
+        {
+            monster.GetComponent<health>().hp += 1; ;
+            Debug.Log(" ++ W ");
+        }
+        else
+        {
+            monster.GetComponent<health>().hp -= 1; ;
+            Debug.Log(" -- W ");
+        }
     }
 }

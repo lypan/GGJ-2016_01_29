@@ -205,12 +205,17 @@ namespace UnityStandardAssets._2D
 
         public void OnBulletOut()
         {
+           
             GameObject temp;
             if (!inLight)
+            {
                 temp = Instantiate(black_Bullet, m_Attack_Origin.position, Quaternion.identity) as GameObject;
+                temp.BroadcastMessage("SetIsBlack", true);
+            }
             else
             {
                 temp = Instantiate(white_Bullet, m_Attack_Origin.position, Quaternion.identity) as GameObject;
+                temp.BroadcastMessage("SetIsBlack", false);
             }
             Vector2 tempVel ;
           
