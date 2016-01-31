@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 21b1ad25e807c4d309eccbb821d06af9
+timeCreated: 1454173905
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sprite_Monster_Black_Walk_0
+    21300002: Sprite_Monster_Black_Walk_1
+    21300004: Sprite_Monster_Black_Walk_2
+    21300006: Sprite_Monster_Black_Walk_3
+    21300008: Sprite_Monster_Black_Walk_4
+    21300010: Sprite_Monster_Black_Walk_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sprite_Monster_Black_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 197
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.5, y: 184}
+        - {x: -78.5, y: 160}
+        - {x: -88.5, y: 131}
+        - {x: -88.5, y: 74}
+        - {x: -86.5, y: 63}
+        - {x: -64.5, y: 9}
+        - {x: -55.5, y: 0}
+        - {x: 81.5, y: 0}
+        - {x: 96.5, y: 27}
+        - {x: 96.5, y: 139}
+        - {x: 76.5, y: 184}
+    - name: Sprite_Monster_Black_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 184
+        width: 197
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 65.5, y: 176}
+        - {x: 32.5, y: 184}
+        - {x: -35.5, y: 184}
+        - {x: -79.5, y: 161}
+        - {x: -87.5, y: 131}
+        - {x: -88.5, y: 116}
+        - {x: -88.5, y: 65}
+        - {x: -69.5, y: 0}
+        - {x: 80.5, y: 0}
+        - {x: 85.5, y: 4}
+        - {x: 96.5, y: 60}
+        - {x: 96.5, y: 134}
+    - name: Sprite_Monster_Black_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 184
+        width: 197
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.5, y: 184}
+        - {x: -36.5, y: 184}
+        - {x: -47.5, y: 182}
+        - {x: -74.5, y: 157}
+        - {x: -86.5, y: 141}
+        - {x: -88.5, y: 121}
+        - {x: -88.5, y: 66}
+        - {x: -60.5, y: 0}
+        - {x: 59.5, y: 0}
+        - {x: 96.5, y: 17}
+        - {x: 96.5, y: 140}
+        - {x: 87.5, y: 154}
+    - name: Sprite_Monster_Black_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 197
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95.5, y: 130}
+        - {x: 71.5, y: 162}
+        - {x: 54.5, y: 184}
+        - {x: -46.5, y: 184}
+        - {x: -65.5, y: 176}
+        - {x: -88.5, y: 133}
+        - {x: -88.5, y: 31}
+        - {x: -83.5, y: 0}
+        - {x: 69.5, y: 0}
+        - {x: 96.5, y: 48}
+        - {x: 96.5, y: 125}
+    - name: Sprite_Monster_Black_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 197
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74.5, y: 165}
+        - {x: 34.5, y: 184}
+        - {x: -61.5, y: 184}
+        - {x: -84.5, y: 140}
+        - {x: -88.5, y: 130}
+        - {x: -88.5, y: 67}
+        - {x: -76.5, y: 6}
+        - {x: -64.5, y: 0}
+        - {x: 59.5, y: 0}
+        - {x: 91.5, y: 13}
+        - {x: 96.5, y: 51}
+        - {x: 96.5, y: 144}
+    - name: Sprite_Monster_Black_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 0
+        width: 197
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.5, y: 184}
+        - {x: -48.5, y: 184}
+        - {x: -77.5, y: 160}
+        - {x: -88.5, y: 128}
+        - {x: -88.5, y: 73}
+        - {x: -87.5, y: 66}
+        - {x: -66.5, y: 0}
+        - {x: 72.5, y: 0}
+        - {x: 96.5, y: 64}
+        - {x: 96.5, y: 124}
+        - {x: 74.5, y: 165}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -29,6 +29,13 @@ namespace UnityStandardAssets._2D
         private float totalDamageTime = 1.5f;
         private Transform m_Attack_Origin;
         private Transform m_Center;
+        private Transform m_Up_Origin;
+        private Transform m_Down_Origin;
+
+        private bool shootingUp;
+        private bool shootingDown;
+
+        [SerializeField] GameObject SpiritCenter;
 
         [SerializeField] GameObject black_Bullet;
         [SerializeField] GameObject white_Bullet;
@@ -44,6 +51,8 @@ namespace UnityStandardAssets._2D
             m_GroundCheck = transform.Find("GroundCheck");
             m_CeilingCheck = transform.Find("CeilingCheck");
             m_Attack_Origin = transform.Find("AttackOrigin");
+            m_Up_Origin = transform.Find("UpOrigin");
+            m_Down_Origin = transform.Find("DownOrigin");
             m_Center = transform.Find("Center");
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -60,7 +69,7 @@ namespace UnityStandardAssets._2D
             Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
             for (int i = 0; i < colliders.Length; i++)
             {
-                if (colliders[i].gameObject != gameObject)
+                if (colliders[i].gameObject != gameObject && !colliders[i].isTrigger)
                     m_Grounded = true;
             }
             m_Anim.SetBool("Ground", m_Grounded);
@@ -89,60 +98,39 @@ namespace UnityStandardAssets._2D
                 }
             }
 
-            if (Spirit >= 1)
-                m_Center.Find("Spirit1").gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            else if(Spirit<1)
-                m_Center.Find("Spirit1").gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            if (Spirit >= 2)
-                m_Center.Find("Spirit2").gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            else if (Spirit < 2)
-                m_Center.Find("Spirit2").gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            if (Spirit >= 3)
-                m_Center.Find("Spirit3").gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            else if (Spirit < 3)
-                m_Center.Find("Spirit3").gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            if (Spirit >= 4)
-                m_Center.Find("Spirit4").gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            else if (Spirit < 4)
-                m_Center.Find("Spirit4").gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            if (Spirit >= 5)
-                m_Center.Find("Spirit5").gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            else if (Spirit < 5)
-                m_Center.Find("Spirit5").gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            if (Spirit >= 6)
-                m_Center.Find("Spirit6").gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            else if (Spirit < 6)
-                m_Center.Find("Spirit6").gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            if (Spirit >= 7)
-                m_Center.Find("Spirit7").gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            else if (Spirit < 7)
-                m_Center.Find("Spirit7").gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            if (Spirit >= 8)
-                m_Center.Find("Spirit8").gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            else if (Spirit < 8)
-                m_Center.Find("Spirit8").gameObject.GetComponent<SpriteRenderer>().enabled = false;
-
-            /*
-            Vector3 axis;
-            if (m_FacingRight)
-                axis = new Vector3(0, 0, 1);
-            else
-                axis = new Vector3(0, 0, -1);
-            m_Center.Rotate(n, Time.deltaTime * 180, Space.World);
-            */
+           
+            
         }
 
 
-        public void Move(float move, bool crouch, bool jump , bool attack)
+        public int GetSpirit()
         {
-          
+            return Spirit;
+        }
+
+        public void SetSpirit(int count)
+        {
+            Spirit = count;
+        }
+
+        public void Move(float move, bool jump , bool attack,bool up, bool down)
+        {
+
+            if (up)
+            {
+                shootingUp = true;
+                shootingDown = false;
+            }
+            else if (down)
+            {
+                shootingDown = true;
+                shootingUp = false;
+            }
+            else
+            {
+                shootingUp = false;
+                shootingDown = false;
+            }
 
             // If crouching, check to see if the character can stand up
            // if (!crouch && m_Anim.GetBool("Crouch"))
@@ -161,7 +149,7 @@ namespace UnityStandardAssets._2D
             if (m_Grounded || m_AirControl)
             {
                 // Reduce the speed if crouching by the crouchSpeed multiplier
-                move = (crouch ? move*m_CrouchSpeed : move);
+                //move = (crouch ? move*m_CrouchSpeed : move);
 
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
                 m_Anim.SetFloat("Speed", Mathf.Abs(move));
@@ -224,9 +212,25 @@ namespace UnityStandardAssets._2D
             {
                 temp = Instantiate(white_Bullet, m_Attack_Origin.position, Quaternion.identity) as GameObject;
             }
-            Vector2 tempVel = (Vector2)m_Attack_Origin.position - (Vector2)m_Center.position;
-            temp.GetComponent<Rigidbody2D>().velocity = new Vector2(m_Rigidbody2D.velocity.x, 0) + tempVel * 10.0f;
-        }
+            Vector2 tempVel ;
+          
+
+            if (shootingUp)
+            {
+                tempVel = (Vector2)m_Up_Origin.position - (Vector2)m_Center.position;
+                temp.GetComponent<Rigidbody2D>().velocity = new Vector2(m_Rigidbody2D.velocity.x, 0) + tempVel * 10.0f;
+            }
+            else if (shootingDown)
+            {
+                tempVel = (Vector2)m_Down_Origin.position - (Vector2)m_Center.position;
+                temp.GetComponent<Rigidbody2D>().velocity = new Vector2(m_Rigidbody2D.velocity.x,0) + tempVel * 10.0f;
+            }
+            else{
+                 tempVel= (Vector2)m_Attack_Origin.position - (Vector2)m_Center.position;
+                temp.GetComponent<Rigidbody2D>().velocity = new Vector2(m_Rigidbody2D.velocity.x, 0) + tempVel * 10.0f;
+            
+            }
+       }
 
         public void OnAttackEnd()
         {
@@ -239,11 +243,17 @@ namespace UnityStandardAssets._2D
             if (!Damagable)
                 return;
 
-            m_Anim.SetTrigger("goDamage");
-            m_Rigidbody2D.velocity = Vector2.zero;
-            onDamage = true;
-            Damagable = false;
+            if (Spirit == 0)
+                m_Anim.SetTrigger("goDie");
+            else
+            {
+                m_Anim.SetTrigger("goDamage");
+                m_Rigidbody2D.velocity = Vector2.zero;
+                onDamage = true;
+                Damagable = false;
 
+                SpiritCenter.BroadcastMessage("ShootSpirit");
+            }
         }
 
          public void OnDamage(Vector3 dir)
@@ -251,10 +261,18 @@ namespace UnityStandardAssets._2D
             if (!Damagable)
                 return;
 
-             m_Anim.SetTrigger("goDamage");
-             m_Rigidbody2D.velocity =  (Vector2)(-0.3f *dir);
-             onDamage = true;
-             Damagable = false;
+
+            if (Spirit == 0)
+                m_Anim.SetTrigger("goDie");
+            else
+            {
+                m_Anim.SetTrigger("goDamage");
+                m_Rigidbody2D.velocity = (Vector2)(-0.3f * dir);
+                onDamage = true;
+                Damagable = false;
+
+                SpiritCenter.BroadcastMessage("ShootSpirit");
+            }
 
         }
 
@@ -290,12 +308,12 @@ namespace UnityStandardAssets._2D
             return !(onAttack || onDamage);
         }
 
-        void OnCollisionEnter(Collision other)
+        void OnCollisionEnter2D(Collision2D other)
         {
             GameObject otherOBJ = other.gameObject;
             if (otherOBJ.tag == "Monster" || otherOBJ.tag == "Monster_Bullet")
             {
-                OnDamage(other.impulse);
+                OnDamage();
             }
 
         }

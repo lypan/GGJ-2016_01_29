@@ -33,16 +33,22 @@ namespace UnityStandardAssets._2D
             bool crouch = false;
             float h = 0;
             bool attack = false;
+            bool up = false;
+            bool down = false;
           
-            crouch = Input.GetKey(KeyCode.LeftControl);
-            if(!m_Character.onAttack&&!m_Character.onDamage)
-            h = CrossPlatformInputManager.GetAxis("Horizontal");
-            
-            if(!m_Character.onDamage)
-            attack = Input.GetKeyDown(KeyCode.LeftControl);
-            
+            //crouch = Input.GetKey(KeyCode.LeftControl);
+            if(!m_Character.onAttack)
+             h = CrossPlatformInputManager.GetAxis("Horizontal");
+
+           // if (!m_Character.onDamage)
+           // {
+                attack = Input.GetKeyDown(KeyCode.LeftControl);
+                up = Input.GetKey(KeyCode.UpArrow);
+                down = Input.GetKey(KeyCode.DownArrow);
+
+           // }
                 // Pass all parameters to the character control script.
-            m_Character.Move(h, crouch, m_Jump,attack);
+            m_Character.Move(h, m_Jump,attack , up , down);
             m_Jump = false;
         }
     }

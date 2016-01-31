@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 31e565a5bdb37604480e547617873723
+timeCreated: 1454200360
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sprite_Player_Die_0
+    21300002: Sprite_Player_Die_1
+    21300004: Sprite_Player_Die_2
+    21300006: Sprite_Player_Die_3
+    21300008: Sprite_Player_Die_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sprite_Player_Die_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 210
+        height: 491
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 87, y: 212}
+        - {x: 65, y: 276}
+        - {x: 41, y: 286}
+        - {x: -11, y: 286}
+        - {x: -50, y: 263}
+        - {x: -60, y: 218}
+        - {x: -60, y: 63}
+        - {x: -52, y: 17}
+        - {x: 42, y: 17}
+        - {x: 54, y: 18}
+        - {x: 68, y: 22}
+        - {x: 91, y: 69}
+        - {x: 91, y: 193}
+    - name: Sprite_Player_Die_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 210
+        height: 491
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 85, y: 280}
+        - {x: 75, y: 293}
+        - {x: 46, y: 343}
+        - {x: 33, y: 371}
+        - {x: 22, y: 373}
+        - {x: -8, y: 373}
+        - {x: -24, y: 362}
+        - {x: -53, y: 333}
+        - {x: -66, y: 293}
+        - {x: -66, y: 224}
+        - {x: -56, y: 146}
+        - {x: -38, y: 49}
+        - {x: -17, y: 44}
+        - {x: 45, y: 44}
+        - {x: 68, y: 57}
+        - {x: 85, y: 124}
+    - name: Sprite_Player_Die_2
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 210
+        height: 491
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 85, y: 367}
+        - {x: 44, y: 375}
+        - {x: 39, y: 407}
+        - {x: 36, y: 416}
+        - {x: 35, y: 431}
+        - {x: 24, y: 441}
+        - {x: -30, y: 441}
+        - {x: -47, y: 436}
+        - {x: -57, y: 382}
+        - {x: -62, y: 295}
+        - {x: -62, y: 235}
+        - {x: -52, y: 171}
+        - {x: -24, y: 118}
+        - {x: -5, y: 54}
+        - {x: 8, y: 47}
+        - {x: 40, y: 47}
+        - {x: 64, y: 59}
+        - {x: 74, y: 99}
+        - {x: 88, y: 212}
+        - {x: 88, y: 342}
+    - name: Sprite_Player_Die_3
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 210
+        height: 491
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 85, y: 396}
+        - {x: 68, y: 406}
+        - {x: 35, y: 488}
+        - {x: 33, y: 491}
+        - {x: -36, y: 491}
+        - {x: -57, y: 449}
+        - {x: -70, y: 438}
+        - {x: -70, y: 369}
+        - {x: -58, y: 298}
+        - {x: -70, y: 242}
+        - {x: -70, y: 227}
+        - {x: -40, y: 181}
+        - {x: -16, y: 129}
+        - {x: -7, y: 115}
+        - {x: 24, y: 101}
+        - {x: 64, y: 101}
+        - {x: 87, y: 113}
+        - {x: 85, y: 238}
+        - {x: 102, y: 271}
+        - {x: 102, y: 351}
+    - name: Sprite_Player_Die_4
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 210
+        height: 491
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: 449}
+        - {x: 32, y: 491}
+        - {x: -29, y: 491}
+        - {x: -59, y: 476}
+        - {x: -70, y: 468}
+        - {x: -77, y: 442}
+        - {x: -84, y: 359}
+        - {x: -84, y: 283}
+        - {x: -76, y: 267}
+        - {x: -41, y: 249}
+        - {x: -21, y: 195}
+        - {x: -13, y: 185}
+        - {x: 51, y: 185}
+        - {x: 77, y: 222}
+        - {x: 101, y: 330}
+        - {x: 101, y: 435}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

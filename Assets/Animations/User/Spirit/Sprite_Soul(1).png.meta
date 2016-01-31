@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 0a3689602f5f2e64eb97a8662b7f9178
+timeCreated: 1454179580
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sprite_Soul(1)_0
+    21300002: Sprite_Soul(1)_1
+    21300004: Sprite_Soul(1)_2
+    21300006: Sprite_Soul(1)_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sprite_Soul(1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 166
+        height: 262
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 239}
+        - {x: 15, y: 241}
+        - {x: -22, y: 241}
+        - {x: -63, y: 132}
+        - {x: -63, y: 99}
+        - {x: -62, y: 88}
+        - {x: -61, y: 82}
+        - {x: -52, y: 45}
+        - {x: -35, y: 24}
+        - {x: 44, y: 24}
+        - {x: 62, y: 52}
+        - {x: 62, y: 116}
+        - {x: 37, y: 226}
+    - name: Sprite_Soul(1)_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 166
+        height: 262
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 235}
+        - {x: -60, y: 148}
+        - {x: -60, y: 48}
+        - {x: -44, y: 25}
+        - {x: 58, y: 25}
+        - {x: 58, y: 172}
+        - {x: 41, y: 235}
+    - name: Sprite_Soul(1)_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 166
+        height: 262
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 228}
+        - {x: -60, y: 205}
+        - {x: -60, y: 27}
+        - {x: 37, y: 27}
+        - {x: 55, y: 37}
+        - {x: 55, y: 153}
+        - {x: 37, y: 228}
+    - name: Sprite_Soul(1)_3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 166
+        height: 262
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 235}
+        - {x: -56, y: 215}
+        - {x: -58, y: 202}
+        - {x: -58, y: 28}
+        - {x: 56, y: 28}
+        - {x: 59, y: 36}
+        - {x: 59, y: 173}
+        - {x: 29, y: 235}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
