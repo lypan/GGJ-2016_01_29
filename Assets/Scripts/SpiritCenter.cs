@@ -9,12 +9,22 @@ public class SpiritCenter : MonoBehaviour {
     Transform center;
     bool shoot;
     Vector3[] tangant;
+    Vector3[] initPos;
     float shootCount;
 
     void Start () {
         center = m_character.transform.Find("Center");
         tangant = new Vector3[8];
-	}
+        initPos = new Vector3[8];
+        initPos[0] = new Vector3(1.5f,0,0);
+        initPos[1] = new Vector3(1.06f,1.06f,0);
+        initPos[2] = new Vector3(0,1.5f,0);
+        initPos[3] = new Vector3(-1.06f,1.06f,0);
+        initPos[4] = new Vector3(-1.5f,0,0);
+        initPos[5] = new Vector3(-1.06f,-1.06f,0);
+        initPos[6] = new Vector3(0,-1.5f,0);
+        initPos[7] = new Vector3(1.06f,-1.06f,0);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -105,7 +115,12 @@ public class SpiritCenter : MonoBehaviour {
                 
                  for (int i = 1; i <= 8; i++)
                  {
-                     Destroy(transform.Find("Spirit" + i).gameObject);
+                     transform.Find("Spirit"+i).gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                     Color c;
+                     c = transform.Find("Spirit" + i).gameObject.GetComponent<SpriteRenderer>().color;
+                     c.a = 1.0f;
+                     transform.Find("Spirit" + i).gameObject.GetComponent<SpriteRenderer>().color = c;
+                     transform.Find("Spirit" + i).position = transform.position + 1.5f * initPos[i - 1];
                  }
 
                 shootCount = 0;

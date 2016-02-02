@@ -62,7 +62,7 @@ public class RoamingSpirit : MonoBehaviour {
     {
         GameObject other = c.gameObject;
         //Debug.Log("SPIRIT++");
-        if (other.tag == "Player" && !other.GetComponent<PlatformerCharacter2D>().onDamage)
+        if (other.tag == "Player" /*&& !other.GetComponent<PlatformerCharacter2D>().onDamage  */ )
         {
             Debug.Log("SPIRIT++");
             other.GetComponent<PlatformerCharacter2D>().SetSpirit( other.GetComponent<PlatformerCharacter2D>().GetSpirit() + 1 );

@@ -272,7 +272,7 @@ namespace UnityStandardAssets._2D
             else
             {
                 m_Anim.SetTrigger("goDamage");
-                m_Rigidbody2D.velocity = (Vector2)(-0.3f * dir);
+                m_Rigidbody2D.AddForce(2000.0f*(Vector2)(0.3f * dir));
                 onDamage = true;
                 Damagable = false;
 
@@ -318,7 +318,7 @@ namespace UnityStandardAssets._2D
             GameObject otherOBJ = other.gameObject;
             if (otherOBJ.tag == "Monster" || otherOBJ.tag == "Monster_Bullet")
             {
-                OnDamage();
+                OnDamage(transform.position - otherOBJ.transform.position);
             }
 
         }

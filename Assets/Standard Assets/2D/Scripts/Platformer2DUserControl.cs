@@ -37,7 +37,7 @@ namespace UnityStandardAssets._2D
             bool down = false;
           
             //crouch = Input.GetKey(KeyCode.LeftControl);
-            if(!m_Character.onAttack)
+            //if(!m_Character.onAttack)
              h = CrossPlatformInputManager.GetAxis("Horizontal");
 
            // if (!m_Character.onDamage)

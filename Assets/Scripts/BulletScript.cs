@@ -71,14 +71,31 @@ public class BulletScript : MonoBehaviour {
         if (monster.GetComponent<Identity>().IsBlack())
         {
             monster.GetComponent<health>().hp += 1; ;
+
+            Vector3 s = monster.transform.localScale;
+
+            if (s.x <= 3)
+            {
+                s = s * 1.2f;
+                monster.transform.localScale = s;
+            }
+            
+
             Debug.Log(" ++ B ");
         }
         else
         {
             monster.GetComponent<health>().hp -= 1;
+
+            Vector3 s = monster.transform.localScale;
+            s = s/1.2f;
+            monster.transform.localScale = s;
+
             Debug.Log(" -- B");
         }
-
+        //Destroy(gameObject);
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        
     }
 
     void WhiteAttack(GameObject monster)
@@ -86,12 +103,29 @@ public class BulletScript : MonoBehaviour {
         if (!monster.GetComponent<Identity>().IsBlack())
         {
             monster.GetComponent<health>().hp += 1; ;
+            
+            Vector3 s = monster.transform.localScale;
+            if (s.x <= 3)
+            {
+                s = s * 1.2f;
+                monster.transform.localScale = s;
+            }
             Debug.Log(" ++ W ");
         }
         else
         {
             monster.GetComponent<health>().hp -= 1; ;
+
+            Vector3 s = monster.transform.localScale;
+
+           
+                s = s / 1.2f;
+                monster.transform.localScale = s;
+            
+
             Debug.Log(" -- W ");
         }
+       // Destroy(gameObject);
+        gameObject.GetComponent<Collider2D>().enabled = false;
     }
 }

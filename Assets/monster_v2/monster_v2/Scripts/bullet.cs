@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityStandardAssets._2D;
 public class bullet : MonoBehaviour {
 
 	// Use this for initialization
@@ -14,7 +14,10 @@ public class bullet : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D col)
 	{
-		if (col.gameObject.tag == "Player")
-			Destroy (gameObject);
+        if (col.gameObject.tag == "Player")
+        {
+            col.gameObject.GetComponent<PlatformerCharacter2D>().OnDamage(gameObject.GetComponent<Rigidbody2D>().velocity);
+            Destroy(gameObject);
+        }
 	}
 }

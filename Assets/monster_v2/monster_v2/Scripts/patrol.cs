@@ -60,10 +60,10 @@ public class patrol : MonoBehaviour {
 	void CheckForHoles()
 	{
 		Vector2 raycastOrigin = new Vector2 (transform.position.x + dir, transform.position.y);
-		RaycastHit2D hit = Physics2D.Raycast(raycastOrigin, -Vector2.up, Mathf.Infinity, _layerMask);
+		RaycastHit2D hit = Physics2D.Raycast(raycastOrigin, -Vector2.up, 2, _layerMask);
 		Debug.DrawRay(raycastOrigin, -Vector2.up * 10, Color.green);
 		if (!hit)
-		{
+        {
 			ChangeDirection ();
 		}
 	}
